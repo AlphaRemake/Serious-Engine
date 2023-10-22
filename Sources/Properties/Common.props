@@ -21,7 +21,7 @@
     <OALBinPath>$(SolutionDir)ThirdParty\OpenAL-Soft\bin\$(SE1PlatformAlt)\</OALBinPath>
 
     <SE1Exe>$(BinDir);$(SolutionDir)..\Tools.Win32;</SE1Exe>
-    <SE1Incl>$(SolutionDir);$(SolutionDir)ThirdParty\;$(ProjectDir);$(DX8InclPath);$(SDLInclPath);$(GLEWInclPath);$(OALInclPath);</SE1Incl>
+    <SE1Incl>$(SolutionDir);$(SolutionDir)Mod\;$(SolutionDir)ThirdParty\;$(ProjectDir);$(DX8InclPath);$(SDLInclPath);$(GLEWInclPath);$(OALInclPath);</SE1Incl>
     <SE1Libs>$(BinDir);$(DX8LibPath);$(GLEWLibPath);$(OALLibPath);</SE1Libs>
 
     <SE1GenericPreproc>SE1_INCLUDE_CURRENTCOMMITHASH;DIRECT3D_VERSION=0x0800;</SE1GenericPreproc>
