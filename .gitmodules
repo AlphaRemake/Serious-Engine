@@ -1,3 +1,6 @@
 [submodule "Sources/ECC"]
 	path = Sources/ECC
 	url = https://github.com/AlphaRemake/ECC.git
+[submodule "Sources/Mod"]
+	path = Sources/Mod
+	url = https://github.com/AlphaRemake/Mod.git
