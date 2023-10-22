@@ -16,6 +16,11 @@ with this program; if not, write to the Free Software Foundation, Inc.,
 // [Cecil] Serious Engine configuration for a specific platform
 #include <Engine/SE_Config.h>
 
+// [Cecil] Compatibility with the original mod SDK
+#include <Properties/SeriousEngine.h>
+#define SE1_VER SE1_110
+#define SE1_GAME SS_TFE
+
 // set this to 1 to enable checks whether somethig is deleted while iterating some array/container
 #define CHECKARRAYLOCKING 0
 

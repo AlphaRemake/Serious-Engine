@@ -23,7 +23,7 @@ with this program; if not, write to the Free Software Foundation, Inc.,
 #include <Engine/Network/Server.h>
 #include <Engine/Network/Network.h>
 #include <Engine/Network/SessionState.h>
-#include <GameMP/SessionProperties.h>
+#include <Game/SessionProperties.h>
 #include <Engine/GameAgent/GameAgent.h>
 
 #include <Engine/GameAgent/MSLegacy.h>

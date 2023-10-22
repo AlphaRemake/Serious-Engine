@@ -17,7 +17,7 @@
     <GLEWBinPath>$(SolutionDir)ThirdParty\glew\bin\Release\$(PlatformName)\</GLEWBinPath>
 
     <SE1Exe>$(BinDir);$(SolutionDir)..\Tools.Win32;</SE1Exe>
-    <SE1Incl>$(SolutionDir);$(SolutionDir)ThirdParty\;$(ProjectDir);$(DX8InclPath);$(SDLInclPath);$(GLEWInclPath);</SE1Incl>
+    <SE1Incl>$(SolutionDir);$(SolutionDir)Mod\;$(SolutionDir)ThirdParty\;$(ProjectDir);$(DX8InclPath);$(SDLInclPath);$(GLEWInclPath);</SE1Incl>
     <SE1Libs>$(BinDir);$(DX8LibPath);$(SDLLibPath);$(GLEWLibPath);</SE1Libs>
 
     <SE1GenericPreproc>DIRECT3D_VERSION=0x0800;</SE1GenericPreproc>

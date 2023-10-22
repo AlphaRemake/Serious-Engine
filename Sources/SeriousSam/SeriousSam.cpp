@@ -19,7 +19,7 @@ with this program; if not, write to the Free Software Foundation, Inc.,
 #include <sys/stat.h>
 #include <process.h>
 #include <Engine/CurrentVersion.h>
-#include <GameMP/Game.h>
+#include <Game/Game.h>
 #include "resource.h"
 #include "SplashScreen.h"
 #include "MainWindow.h"
