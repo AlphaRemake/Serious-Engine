@@ -4,3 +4,6 @@
 [submodule "Sources/ThirdParty/ECC"]
 	path = Sources/ThirdParty/ECC
 	url = https://github.com/DreamyCecil/SE1-ECC.git
+[submodule "Sources/Mod"]
+	path = Sources/Mod
+	url = https://github.com/AlphaRemake/Mod.git

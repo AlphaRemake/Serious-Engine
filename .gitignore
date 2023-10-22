@@ -82,13 +82,6 @@ UserData/*
 *.vis
 
 # Generated source files
-Sources/Engine/Classes/*.h
-Sources/Engine/Classes/*.cpp
-Sources/Engine/CurrentCommitHash.h
-Sources/EntitiesMP/**/*.cpp
-Sources/EntitiesMP/**/*.h
-!Sources/EntitiesMP/Common/*
-!Sources/EntitiesMP/StdH/*
 Sources/StaticAPI/Lists/*
 
 # Bison/Flex generated files
