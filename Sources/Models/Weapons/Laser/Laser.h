@@ -20,6 +20,8 @@ with this program; if not, write to the Free Software Foundation, Inc.,
 #define LASER_ANIM_DEACTIVATE 3
 #define LASER_ANIM_WAIT01 4
 #define LASER_ANIM_WAIT02 5
+#define LASER_ANIM_WAIT03 6
+#define LASER_ANIM_WAIT04 7
 
 // Color names
 

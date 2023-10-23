@@ -15,12 +15,15 @@ with this program; if not, write to the Free Software Foundation, Inc.,
 
 // Animation names
 #define MINIGUN_ANIM_DEFAULT_ANIMATION 0
-#define MINIGUN_ANIM_WAIT1 1
-#define MINIGUN_ANIM_WAIT2 2
-#define MINIGUN_ANIM_WAIT3 3
-#define MINIGUN_ANIM_WAIT4 4
-#define MINIGUN_ANIM_ACTIVATE 5
-#define MINIGUN_ANIM_DEACTIVATE 6
+#define MINIGUN_ANIM_FIRESTART 1
+#define MINIGUN_ANIM_FIRELOOP 2
+#define MINIGUN_ANIM_FIRESTOP 3
+#define MINIGUN_ANIM_WAIT1 4
+#define MINIGUN_ANIM_WAIT2 5
+#define MINIGUN_ANIM_WAIT3 6
+#define MINIGUN_ANIM_WAIT4 7
+#define MINIGUN_ANIM_ACTIVATE 8
+#define MINIGUN_ANIM_DEACTIVATE 9
 
 // Color names
 
