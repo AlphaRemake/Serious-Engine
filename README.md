@@ -1,15 +1,13 @@
-# Serious Engine
+# Serious Sam Alpha Remake
 
 This is a fork of Croteam's Serious Engine 1.10 that aims to provide code that is easier to maintain and build under any sort of configuration and that also includes many quality-of-life improvements over the original code without adding too much.
 
 ### Engine components
 - `DedicatedServer` - Dedicated server application for hosting multiplayer game
-- `Ecc` - Entity Class Compiler for compiling entity source files (`*.es`)
+- `ECC` - Custom Entity Class Compiler for compiling entity source files (`*.es`)
 - `Engine` - Serious Engine 1.10
 - `EngineGUI` - Common GUI components for game tools
-- `EntitiesMP` - All the entity logic
-- `GameGUIMP` - Specific GUI components for game tools
-- `GameMP` - Module for handling basic game logic
+- `Mod` - Alpha Remake mod itself
 - `SeriousSam` - The main game executable
 - `Shaders` - Compiled shaders for SKA models
 
@@ -32,9 +30,11 @@ These have been modified to run correctly under the recent versions of Windows. 
 
 # Building
 
+Before building **Serious Sam Alpha Remake**, run `git submodule update --init --recursive` to load files for all submodules in the repository.
+
 To build Serious Engine 1, you will need **Visual Studio 2010** or later. The engine was originally written using **Visual C++ 6.0** and released to the public modified to build and run correctly using **Visual Studio 2013**.
 
-Once you've installed **Visual Studio** and (optionally) DirectX8 SDK, you can build the engine solution (`Sources/All.sln`). Press F7 or **Build** -> **Build solution**. Once the project is build, the libraries and executables will be copied under the `Bin/` directory.
+Once you've installed **Visual Studio** and (optionally) DirectX8 SDK, you can build the engine solution (`Sources/AlphaRemake.sln`). Press F7 or **Build** -> **Build solution**. Once the project is build, the libraries and executables will be copied under the `Bin/` directory.
 
 # Optional features
 
