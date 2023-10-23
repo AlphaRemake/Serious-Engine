@@ -15,15 +15,19 @@ with this program; if not, write to the Free Software Foundation, Inc.,
 
 // Animation names
 #define WALKER_ANIM_DEFAULT_ANIMATION 0
-#define WALKER_ANIM_STAND01 1
-#define WALKER_ANIM_IDLEFIGHT 2
-#define WALKER_ANIM_TOFIRE 3
-#define WALKER_ANIM_FROMFIRE 4
+#define WALKER_ANIM_ATTACK01 1
+#define WALKER_ANIM_TOFIRE 2
+#define WALKER_ANIM_FROMFIRE 3
+#define WALKER_ANIM_FIREBOTH 4
 #define WALKER_ANIM_FIRELEFT 5
 #define WALKER_ANIM_FIRERIGHT 6
-#define WALKER_ANIM_WALKBIG 7
-#define WALKER_ANIM_WALK 8
-#define WALKER_ANIM_DEATH 9
+#define WALKER_ANIM_DEATH 7
+#define WALKER_ANIM_STAND01 8
+#define WALKER_ANIM_STAND03 9
+#define WALKER_ANIM_WALK 10
+#define WALKER_ANIM_IDLEFIGHT 11
+
+#define WALKER_ANIM_WALKBIG WALKER_ANIM_WALK
 
 // Color names
 
@@ -34,9 +38,5 @@ with this program; if not, write to the Free Software Foundation, Inc.,
 #define WALKER_COLLISION_BOX_DEATH 1
 
 // Attaching position names
-#define WALKER_ATTACHMENT_ROCKETLAUNCHER_LT 0
-#define WALKER_ATTACHMENT_ROCKETLAUNCHER_RT 1
-#define WALKER_ATTACHMENT_LASER_LT 2
-#define WALKER_ATTACHMENT_LASER_RT 3
 
 // Sound names

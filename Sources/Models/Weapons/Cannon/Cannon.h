@@ -15,9 +15,9 @@ with this program; if not, write to the Free Software Foundation, Inc.,
 
 // Animation names
 #define CANNON_ANIM_CENTERED 0
-#define CANNON_ANIM_FIRE 1
-#define CANNON_ANIM_ACTIVATE 2
-#define CANNON_ANIM_DEACTIVATE 3
+#define CANNON_ANIM_ACTIVATE 1
+#define CANNON_ANIM_DEACTIVATE 2
+#define CANNON_ANIM_FIRE 3
 #define CANNON_ANIM_WAIT01 4
 #define CANNON_ANIM_WAIT02 5
 #define CANNON_ANIM_WAIT03 6
@@ -31,6 +31,7 @@ with this program; if not, write to the Free Software Foundation, Inc.,
 #define CANNON_COLLISION_BOX_PART_NAME 0
 
 // Attaching position names
-#define CANNON_ATTACHMENT_BODY  0
+#define CANNON_ATTACHMENT_BODY 0
+#define CANNON_ATTACHMENT_FUSE 1
 
 // Sound names

@@ -14,13 +14,17 @@ with this program; if not, write to the Free Software Foundation, Inc.,
 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA. */
 
 // Animation names
-#define WEREBULL_ANIM_DEFAULT 0
-#define WEREBULL_ANIM_IDLE 1
+#define WEREBULL_ANIM_DEFAULT_ANIMATION 0
+#define WEREBULL_ANIM_WALK 1
 #define WEREBULL_ANIM_RUN 2
-#define WEREBULL_ANIM_WALK 3
+#define WEREBULL_ANIM_RUNSTART 3
 #define WEREBULL_ANIM_ATTACKHORNS 4
-#define WEREBULL_ANIM_DEATH 5
-#define WEREBULL_ANIM_DEATHRUN 6
+#define WEREBULL_ANIM_IDLE 5
+#define WEREBULL_ANIM_IDLE2 6
+#define WEREBULL_ANIM_DEATH 7
+#define WEREBULL_ANIM_DEATH_REST 8
+#define WEREBULL_ANIM_DEATHRUN 9
+#define WEREBULL_ANIM_DEATHRUN_REST 10
 
 // Color names
 

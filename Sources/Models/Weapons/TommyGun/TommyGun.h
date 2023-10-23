@@ -19,8 +19,9 @@ with this program; if not, write to the Free Software Foundation, Inc.,
 #define TOMMYGUN_ANIM_WAIT1 2
 #define TOMMYGUN_ANIM_WAIT2 3
 #define TOMMYGUN_ANIM_WAIT3 4
-#define TOMMYGUN_ANIM_ACTIVATE 5
-#define TOMMYGUN_ANIM_DEACTIVATE 6
+#define TOMMYGUN_ANIM_WAIT4 5
+#define TOMMYGUN_ANIM_ACTIVATE 6
+#define TOMMYGUN_ANIM_DEACTIVATE 7
 
 // Color names
 

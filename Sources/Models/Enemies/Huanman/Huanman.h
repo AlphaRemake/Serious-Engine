@@ -19,8 +19,10 @@ with this program; if not, write to the Free Software Foundation, Inc.,
 #define HUANMAN_ANIM_DEATH 2
 #define HUANMAN_ANIM_DEATHREST 3
 #define HUANMAN_ANIM_STAND 4
-#define HUANMAN_ANIM_WALK 5
-#define HUANMAN_ANIM_WOUND 6
+#define HUANMAN_ANIM_TOWALK 5
+#define HUANMAN_ANIM_FROMWALK 6
+#define HUANMAN_ANIM_WALK 7
+#define HUANMAN_ANIM_WOUND 8
 
 // Color names
 
