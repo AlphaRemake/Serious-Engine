@@ -204,6 +204,12 @@
     <ClCompile Include="GUI\Menus\MenuActions.cpp">
       <Filter>Source Files\GUI\Menus</Filter>
     </ClCompile>
+    <ClCompile Include="ScreenResolutions.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="WindowModes.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CmdLine.h">
@@ -391,6 +397,12 @@
     </ClInclude>
     <ClInclude Include="GUI\Menus\MenuActions.h">
       <Filter>Header Files\GUI headers\Menus headers</Filter>
+    </ClInclude>
+    <ClInclude Include="ScreenResolutions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="WindowModes.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

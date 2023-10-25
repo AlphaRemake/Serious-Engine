@@ -1,4 +1,4 @@
-/* Copyright (c) 2002-2012 Croteam Ltd.
+/* Copyright (c) 2022-2023 Dreamy Cecil
 This program is free software; you can redistribute it and/or modify
 it under the terms of version 2 of the GNU General Public License as published by
 the Free Software Foundation
@@ -13,30 +13,27 @@ You should have received a copy of the GNU General Public License along
 with this program; if not, write to the Free Software Foundation, Inc.,
 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA. */
 
-#ifndef SE_INCL_GAME_MENU_VIDEOOPTIONS_H
-#define SE_INCL_GAME_MENU_VIDEOOPTIONS_H
+#ifndef CECIL_INCL_WINDOWMODES_H
+#define CECIL_INCL_WINDOWMODES_H
+
 #ifdef PRAGMA_ONCE
   #pragma once
 #endif
 
-#include "GameMenu.h"
+// Make game application be aware of the DPI scaling on Windows Vista and later
+void SetDPIAwareness(void);
 
-
-class CVideoOptionsMenu : public CGameMenu {
-public:
-  CMGTitle gm_mgTitle;
-  CMGTrigger gm_mgDisplayAPITrigger;
-  CMGTrigger gm_mgDisplayAdaptersTrigger;
-  CMGTrigger gm_mgWindowModeTrigger; // [Cecil]
-  CMGTrigger gm_mgAspectRatiosTrigger; // [Cecil]
-  CMGTrigger gm_mgResolutionsTrigger;
-  CMGTrigger gm_mgDisplayPrefsTrigger;
-  CMGButton gm_mgVideoRendering;
-  CMGTrigger gm_mgBitsPerPixelTrigger;
-  CMGButton gm_mgApply;
-
-  void StartMenu(void);
-  void Initialize_t(void);
+// Window modes
+enum EWindowModes {
+  E_WM_WINDOWED   = 0, // Normal
+  E_WM_BORDERLESS = 1,
+  E_WM_FULLSCREEN = 2,
 };
 
-#endif  /* include-once check. */
+// Window mode names
+extern CTString _astrWindowModes[3];
+
+// Open the main application window in borderless mode
+void OpenMainWindowBorderless(PIX pixSizeI, PIX pixSizeJ);
+
+#endif

@@ -19,7 +19,7 @@ with this program; if not, write to the Free Software Foundation, Inc.,
 
 extern BOOL _bWindowChanging = FALSE;    // ignores window messages while this is set
 extern OS::Window _hwndMain = NULL;
-static char achWindowTitle[256]; // current window title
+char _achWindowTitle[256]; // current window title
 
 #if !SE1_PREFER_SDL
 
@@ -27,7 +27,7 @@ static HBITMAP _hbmSplash = NULL;
 static BITMAP  _bmSplash;
 
 // for window reposition function
-static PIX _pixLastSizeI, _pixLastSizeJ;
+PIX _pixLastSizeI, _pixLastSizeJ;
 
 
 // window procedure active while window changes are occuring
@@ -171,8 +171,8 @@ void ResetMainWindowNormal(void)
   GetWindowRect( _hwndMain, &rWindow);
   const PIX pixWidth  = _pixLastSizeI + (rWindow.right-rWindow.left) - (rClient.right-rClient.left);
   const PIX pixHeight = _pixLastSizeJ + (rWindow.bottom-rWindow.top) - (rClient.bottom-rClient.top);
-  const PIX pixPosX   = (::GetSystemMetrics(SM_CXSCREEN) - pixWidth ) /2;
-  const PIX pixPosY   = (::GetSystemMetrics(SM_CYSCREEN) - pixHeight) /2;
+  const PIX pixPosX = (_vpixScreenRes(1) - pixWidth) / 2;
+  const PIX pixPosY = (_vpixScreenRes(2) - pixHeight) / 2;
   // set new window size and show it
   SetWindowPos( _hwndMain, NULL, pixPosX,pixPosY, pixWidth,pixHeight, SWP_NOZORDER);
   ShowWindow(   _hwndMain, SW_SHOW);
@@ -226,8 +226,8 @@ void OpenMainWindowNormal( PIX pixSizeI, PIX pixSizeJ)
   AssertWindowCreation(); // [Cecil]
 
   // set window title
-  sprintf( achWindowTitle, TRANS("Serious Sam (Window %dx%d)"), pixSizeI, pixSizeJ);
-  SetWindowTextA( _hwndMain, achWindowTitle);
+  sprintf(_achWindowTitle, TRANS("Serious Sam (Window %dx%d)"), pixSizeI, pixSizeJ);
+  SetWindowTextA(_hwndMain, _achWindowTitle);
   _pixLastSizeI = pixSizeI;
   _pixLastSizeJ = pixSizeJ;
   ResetMainWindowNormal();
@@ -267,8 +267,8 @@ void OpenMainWindowFullScreen( PIX pixSizeI, PIX pixSizeJ)
   AssertWindowCreation(); // [Cecil]
 
   // set window title and show it
-  sprintf( achWindowTitle, TRANS("Serious Sam (FullScreen %dx%d)"), pixSizeI, pixSizeJ);
-  SetWindowTextA( _hwndMain, achWindowTitle);
+  sprintf(_achWindowTitle, TRANS("Serious Sam (FullScreen %dx%d)"), pixSizeI, pixSizeJ);
+  SetWindowTextA(_hwndMain, _achWindowTitle);
   ShowWindow(    _hwndMain, SW_SHOWNORMAL);
 
 #else
@@ -306,8 +306,8 @@ void OpenMainWindowInvisible(void)
   AssertWindowCreation(); // [Cecil]
 
   // set window title
-  sprintf( achWindowTitle, "Serious Sam");
-  SetWindowTextA( _hwndMain, achWindowTitle);
+  sprintf(_achWindowTitle, "Serious Sam");
+  SetWindowTextA( _hwndMain, _achWindowTitle);
 
 #else
   // [Cecil] SDL: Create invisible window

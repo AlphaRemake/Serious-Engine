@@ -49,8 +49,6 @@ extern CTString astrBitsPerPixelRadioTexts[3];
 extern CTString astrFrequencyRadioTexts[4];
 extern CTString *astrSoundAPIRadioTexts; // [Cecil] Dynamically created array
 
-extern PIX apixWidths[20][2];
-
 void InitGameTypes(void);
 
 int qsort_CompareFileInfos_NameUp(const void *elem1, const void *elem2);
