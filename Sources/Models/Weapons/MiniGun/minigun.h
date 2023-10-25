@@ -33,9 +33,8 @@ with this program; if not, write to the Free Software Foundation, Inc.,
 #define MINIGUN_COLLISION_BOX_PART_NAME 0
 
 // Attaching position names
-#define MINIGUN_ATTACHMENT_BODY 0
-#define MINIGUN_ATTACHMENT_BARRELS 1
+#define MINIGUN_ATTACHMENT_BARRELS 0
+#define MINIGUN_ATTACHMENT_BODY 1
 #define MINIGUN_ATTACHMENT_ENGINE 2
-#define MINIGUN_ATTACHMENT_HANDLE 3
 
 // Sound names
