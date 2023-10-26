@@ -33,11 +33,11 @@ with this program; if not, write to the Free Software Foundation, Inc.,
 #define EYEMAN_ANIM_RUN 16
 #define EYEMAN_ANIM_STAND 17
 #define EYEMAN_ANIM_WALK 18
-#define EYEMAN_ANIM_WOUND03 20
-#define EYEMAN_ANIM_WOUND06 21
-#define EYEMAN_ANIM_WOUND07 22
-#define EYEMAN_ANIM_MORPHWOUND01 23
-#define EYEMAN_ANIM_MORPHWOUND02 24
+#define EYEMAN_ANIM_WOUND03 19
+#define EYEMAN_ANIM_WOUND06 20
+#define EYEMAN_ANIM_WOUND07 21
+#define EYEMAN_ANIM_MORPHWOUND01 22
+#define EYEMAN_ANIM_MORPHWOUND02 23
 // Color names
 
 // Patch names
