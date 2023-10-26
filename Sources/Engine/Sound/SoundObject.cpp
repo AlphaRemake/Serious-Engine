@@ -325,11 +325,8 @@ void CSoundObject::SetOffset( FLOAT fOffset)
     fOffset = 0.0f;
   }
 
-  // on the other hand, don't set offset for real - might be source for some bugs!
-  return;
-  
   // update sound offsets
-  CPrintF("Setting offset: %g\n", fOffset);
+  //CPrintF("Setting offset: %g\n", fOffset);
   psoTail->so_fLeftOffset = psoTail->so_fRightOffset = psoTail->so_pCsdLink->sd_wfeFormat.nSamplesPerSec*fOffset;
 }
 
