@@ -167,14 +167,14 @@ Button
  Released: ctl_bWeaponFlip = 0;
 
 Button
- Name: TTRS Knife/Chainsaw
+ Name: TTRS Knife
  Key1: 1
  Key2: None
  Pressed:  ctl_bSelectWeapon[1] = 1;
  Released: ctl_bSelectWeapon[1] = 0;
 
 Button
- Name: TTRS Colt/Two Colts
+ Name: TTRS Colt / Two Colts
  Key1: 2
  Key2: None
  Pressed:  ctl_bSelectWeapon[2] = 1;
@@ -188,39 +188,46 @@ Button
  Released: ctl_bSelectWeapon[3] = 0;
 
 Button
- Name: TTRS Tommygun/Minigun
+ Name: TTRS Tommygun / Minigun
  Key1: 4
  Key2: None
  Pressed:  ctl_bSelectWeapon[4] = 1;
  Released: ctl_bSelectWeapon[4] = 0;
 
 Button
- Name: TTRS Rocket Launcher/Grenade Launcher
+ Name: TTRS Rocket Launcher
  Key1: 5
  Key2: None
  Pressed:  ctl_bSelectWeapon[5] = 1;
  Released: ctl_bSelectWeapon[5] = 0;
 
 Button
- Name: TTRS Flamethrower/Sniper
+ Name: TTRS Grenade Launcher / Pipebomb
  Key1: 6
  Key2: None
  Pressed:  ctl_bSelectWeapon[6] = 1;
  Released: ctl_bSelectWeapon[6] = 0;
 
 Button
- Name: TTRS Laser
+ Name: TTRS Flamethrower
  Key1: 7
  Key2: None
  Pressed:  ctl_bSelectWeapon[7] = 1;
  Released: ctl_bSelectWeapon[7] = 0;
 
 Button
- Name: TTRS Cannon
+ Name: TTRS Lasergun / Ghostbuster
  Key1: 8
  Key2: None
  Pressed:  ctl_bSelectWeapon[8] = 1;
  Released: ctl_bSelectWeapon[8] = 0;
+ 
+ Button
+ Name: TTRS Cannon / Nuke Cannon
+ Key1: 9
+ Key2: None
+ Pressed:  ctl_bSelectWeapon[9] = 1;
+ Released: ctl_bSelectWeapon[9] = 0;
 
 Button
  Name: TTRS Serious Bomb
