@@ -24,6 +24,5 @@ with this program; if not, write to the Free Software Foundation, Inc.,
 #define HEAD_COLLISION_BOX_PART_NAME 0
 
 // Attaching position names
-#define HEAD_ATTACHMENT_GLASSES 0
 
 // Sound names
