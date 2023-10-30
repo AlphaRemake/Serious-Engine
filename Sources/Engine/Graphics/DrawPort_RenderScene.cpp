@@ -365,7 +365,10 @@ static void RSBinToGroups( ScenePolygon *pspoFirst)
       const BOOL bOverbright = (colFlat & 0x80808000);
       // only need to update poly color if shadowmap is flat
       if( bFlat) {
-        if( !bOverbright || shd_iForceFlats==1) {
+        // [Cecil] This chunk of code makes 2nd and 3rd texture layers fullbright whenever they aren't affected
+        // by any light (ambient doesn't count), so it's been commented to make it work like in TFE (hopefully with no issues)
+
+        /*if( !bOverbright || shd_iForceFlats==1) {
           if( shd_bShowFlats) colFlat = C_mdMAGENTA; // show flat shadows?
           else { // enhance light color to emulate overbrighting
             if( !bOverbright) colFlat<<=1;
@@ -386,7 +389,7 @@ static void RSBinToGroups( ScenePolygon *pspoFirst)
           else colTotal = MulColors( colTotal,  colFlat);
           psmShadow->MarkDrawn();
         }
-        else {
+        else*/ {
           // need to update poly color if shadowmap is flat and overbrightened
           COLOR &colTotal = pspo->spo_acolColors[3];
           if( shd_bShowFlats) colFlat = C_mdBLUE; // overbrightened!
