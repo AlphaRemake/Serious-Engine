@@ -1243,7 +1243,8 @@ void CGfxLibrary::Init(void)
   _pShell->DeclareSymbol("persistent user FLOAT shd_fCacheSize;",   &shd_fCacheSize);
   _pShell->DeclareSymbol("persistent user INDEX shd_bCacheAll;",    &shd_bCacheAll);
   _pShell->DeclareSymbol("persistent user INDEX shd_bAllowFlats;", &shd_bAllowFlats);
-  _pShell->DeclareSymbol("persistent      INDEX shd_iForceFlats;", &shd_iForceFlats);
+  // [Cecil] Forbid the value from being changed
+  //_pShell->DeclareSymbol("persistent      INDEX shd_iForceFlats;", &shd_iForceFlats);
   _pShell->DeclareSymbol("           user INDEX shd_bShowFlats;",  &shd_bShowFlats);
   _pShell->DeclareSymbol("           user INDEX shd_bColorize;",   &shd_bColorize);
   
