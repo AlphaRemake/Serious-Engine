@@ -60,7 +60,6 @@ with this program; if not, write to the Free Software Foundation, Inc.,
 #define PLAYER_COLLISION_BOX_STAND 0
 #define PLAYER_COLLISION_BOX_CROUCH 1
 #define PLAYER_COLLISION_BOX_SWIM 2
-#define PLAYER_COLLISION_BOX_SWIMSMALL PLAYER_COLLISION_BOX_SWIM
 
 // Attaching position names
 #define PLAYER_ATTACHMENT_TORSO 0
