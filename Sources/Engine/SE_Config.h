@@ -85,7 +85,7 @@ with this program; if not, write to the Free Software Foundation, Inc.,
 #define SE1_MMXINTOPT     1 // Use MMX intrinsics for light calculations (0 - No; 1 - Yes)
 #endif
 #ifndef SE1_DOUBLE_TIMER
-#define SE1_DOUBLE_TIMER  0 // Use double-precision floating-point type for timer values
+#define SE1_DOUBLE_TIMER  1 // Use double-precision floating-point type for timer values
 #endif
 #ifndef SE1_TRUFORM
 #define SE1_TRUFORM       0 // Truform support (0 - Disabled; 1 - Enabled)
