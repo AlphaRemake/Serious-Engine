@@ -14,9 +14,9 @@ with this program; if not, write to the Free Software Foundation, Inc.,
 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA. */
 
 #ifdef NDEBUG
-  #pragma comment(lib, "EntitiesMP.lib")
+  #pragma comment(lib, "Entities.lib")
 #else
-  #pragma comment(lib, "EntitiesMPD.lib")
+  #pragma comment(lib, "EntitiesD.lib")
 #endif
 
 #if defined(SE1_STATIC_BUILD)
