@@ -82,6 +82,9 @@ UserData/*
 *.vis
 
 # Generated source files
+Sources/Engine/Classes/*.h
+Sources/Engine/Classes/*.cpp
+Sources/Engine/CurrentCommitHash.h
 Sources/StaticAPI/Lists/*
 
 # Bison/Flex generated files

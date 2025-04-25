@@ -9,7 +9,7 @@ target_link_libraries(DedicatedServer Engine ${ENTITIESLIB} ${GAMELIB} ${SHADERS
 
 if(LINUX)
   # For preserving global class registrars in static modules
-  target_link_options(DedicatedServer PRIVATE -Wl,--whole-archive ../EntitiesMP/lib${ENTITIESLIB}.a ../Shaders/lib${SHADERSLIB}.a -Wl,--no-whole-archive)
+  target_link_options(DedicatedServer PRIVATE -Wl,--whole-archive ../Mod/Entities/lib${ENTITIESLIB}.a ../Shaders/lib${SHADERSLIB}.a -Wl,--no-whole-archive)
 
   set_target_properties(DedicatedServer PROPERTIES LINK_FLAGS "-Wl,-rpath,$ORIGIN")
   target_link_libraries(DedicatedServer "m")

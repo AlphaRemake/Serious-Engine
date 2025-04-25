@@ -38,6 +38,7 @@ endif()
 
 include_directories(
   "${CMAKE_SOURCE_DIR}"
+  "${CMAKE_SOURCE_DIR}/Mod"
   "${CMAKE_SOURCE_DIR}/ThirdParty"
   "${CMAKE_SOURCE_DIR}/ThirdParty/libogg/include"
   "${CMAKE_SOURCE_DIR}/ThirdParty/libvorbis/include"
@@ -76,11 +77,11 @@ endmacro()
 add_subdirectory(ThirdParty)
 add_subdirectory(Engine)
 
-set(ENTITIESLIB "EntitiesMP${DEBUGSUFFIX}")
-add_subdirectory(EntitiesMP)
+set(ENTITIESLIB "Entities${DEBUGSUFFIX}")
+add_subdirectory(Mod/Entities)
 
-set(GAMELIB "GameMP${DEBUGSUFFIX}")
-add_subdirectory(GameMP)
+set(GAMELIB "Game${DEBUGSUFFIX}")
+add_subdirectory(Mod/Game)
 
 set(SHADERSLIB "Shaders${DEBUGSUFFIX}")
 add_subdirectory(Shaders)

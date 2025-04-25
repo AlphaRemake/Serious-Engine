@@ -16,9 +16,9 @@ with this program; if not, write to the Free Software Foundation, Inc.,
 #if SE1_WIN && defined(SE1_STATIC_BUILD)
 
 #ifdef NDEBUG
-  #pragma comment(lib, "EntitiesMP.lib")
+  #pragma comment(lib, "Entities.lib")
 #else
-  #pragma comment(lib, "EntitiesMPD.lib")
+  #pragma comment(lib, "EntitiesD.lib")
 #endif
 
 #define ES_CLASS_INLINE(_Class) \
