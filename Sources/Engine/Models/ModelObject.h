@@ -121,7 +121,7 @@ public:
   void StretchSingleModel(const FLOAT3D &vStretch);
 
   // model rendering
-  void SetupModelRendering( CRenderModel &rm);
+  void SetupModelRendering(CRenderModel &rm, const FLOAT3D &vRenderStretch = FLOAT3D(1, 1, 1)); // [Cecil] Optional stretching
   void RenderModel( CRenderModel &rm);
   void RenderPatches( CRenderModel &rm);
   void AddSimpleShadow( CRenderModel &rm, const FLOAT fIntensity,  const FLOATplane3D &plShadowPlane);

@@ -467,7 +467,7 @@ static void RenderWireframeBox( FLOAT3D vMinVtx, FLOAT3D vMaxVtx, COLOR col)
 
 
 // setup CRenderModel class for rendering one model and eventually it's shadow(s)
-void CModelObject::SetupModelRendering( CRenderModel &rm)
+void CModelObject::SetupModelRendering(CRenderModel &rm, const FLOAT3D &vRenderStretch)
 {
   _sfStats.IncrementCounter( CStatForm::SCI_MODELS);
   _pfModelProfile.StartTimer( CModelProfile::PTI_INITMODELRENDERING);
@@ -494,9 +494,10 @@ void CModelObject::SetupModelRendering( CRenderModel &rm)
 
   // get decompression/stretch factors
   FLOAT3D &vDataStretch = rm.rm_pmdModelData->md_Stretch;
-  rm.rm_vStretch(1) = vDataStretch(1) * mo_Stretch(1);
-  rm.rm_vStretch(2) = vDataStretch(2) * mo_Stretch(2);
-  rm.rm_vStretch(3) = vDataStretch(3) * mo_Stretch(3);
+  // [Cecil] Apply optional stretching
+  rm.rm_vStretch(1) = vDataStretch(1) * mo_Stretch(1) * vRenderStretch(1);
+  rm.rm_vStretch(2) = vDataStretch(2) * mo_Stretch(2) * vRenderStretch(2);
+  rm.rm_vStretch(3) = vDataStretch(3) * mo_Stretch(3) * vRenderStretch(3);
   rm.rm_vOffset     = rm.rm_pmdModelData->md_vCompressedCenter;
   // check if object is inverted (in mirror)
   BOOL bXInverted = rm.rm_vStretch(1) < 0;
@@ -573,7 +574,7 @@ void CModelObject::SetupModelRendering( CRenderModel &rm)
     } // prepare if visible
     _pfModelProfile.StopTimer( CModelProfile::PTI_INITMODELRENDERING);
     _pfModelProfile.StopTimer( CModelProfile::PTI_INITATTACHMENTS);
-    pamo->amo_moModelObject.SetupModelRendering( *pamo->amo_prm);
+    pamo->amo_moModelObject.SetupModelRendering(*pamo->amo_prm, vRenderStretch);
     _pfModelProfile.StartTimer( CModelProfile::PTI_INITATTACHMENTS);
     _pfModelProfile.StartTimer( CModelProfile::PTI_INITMODELRENDERING);
   }
